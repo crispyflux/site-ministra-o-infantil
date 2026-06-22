@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Pliant", sans-serif;
+    text-transform: capitalize;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: palevioletred;
+}
+
+/* CONTAINER PRINCIPAL */
+.max-widht {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: pink;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+}
+
+h1 {
+    color: rgb(151, 82, 151);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* LOGOS */
+.logo-turminha {
+    width: 50px;
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+
+.logo-instagram {
+    width: 35px;
+    transition: 0.3s ease;
+}
+
+.logo-turminha:hover,
+.logo-instagram:hover {
+    transform: scale(1.1);
+}
+
+/* LINKS */
+a {
+    text-decoration: none;
+}
+
+/* FOTO CENTRAL */
+.foto-central {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.img-tia-aline {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+    border-radius: 40px;
+}
+
+/* CONTAINER TEXTO */
+.container {
+    margin-top: 20px;
+    background-color: pink;
+    padding: 50px 20px;
+    border-radius: 40px;
+    text-align: center;
+}
+
+h2 {
+    color: rgb(151, 82, 151);
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* BIOGRAFIA (CORRIGIDA) */
+.container-biografia {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap; /* <- ESSENCIAL PRA NÃO QUEBRAR */
+    padding: 40px 20px;
+    margin-top: 20px;
+    background-color: pink;
+    border-radius: 20px;
+}
+
+/* TEXTO BIO */
+.conteudo-da-biografia {
+    flex: 1;
+    min-width: 280px;
+    max-width: 600px;
+    word-wrap: break-word;
+}
+
+/* IMAGEM BIO */
+.segunda-foto-principal {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    min-width: 280px;
+}
+
+.segunda-foto-principal img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 20px;
+    transition: 0.3s ease;
+}
+
+.segunda-foto-principal img:hover {
+    transform: scale(1.05);
+}
+
+/* TEXTO DESTACADO */
+.aline-cia {
+    color: darkorange;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+p {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 1rem;
+    overflow-wrap: break-word; /* <- evita estourar layout */
+}
+
+/* SERVIÇOS */
+.serviços {
+    margin-top: 20px;
+    background-color: pink;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.titulo-serviços {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container-serviços {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* IMAGENS IGUAIS E RESPONSIVAS */
+.service,
+.service-dois,
+.service-tres {
+    width: 100%;
+    max-width: 350px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* CONTATO */
+.container-contato {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.localização,
+.contato,
+.redes-sociais {
+    flex: 1;
+    min-width: 250px;
+    background-color: pink;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+    background-color: pink;
+    padding: 15px;
+    flex-wrap: wrap;
+    border-top: 2px solid white;
+}
+
+.footer-icon {
+    width: 38px;
+    transition: 0.3s ease;
+}
+
+.footer-icons {
+    width: 40px;
+    transition: 0.3s ease;
+}
+
+.footer-icon:hover,
+.footer-icons:hover {
+    transform: scale(1.1);
+}
+
+
+
+/* tablets */
+@media (max-width: 900px) {
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    .img-tia-aline {
+        max-height: 400px;
+    }
+}
+
+/* celulares */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        padding: 30px 15px;
+    }
+
+    .img-tia-aline {
+        border-radius: 20px;
+    }
+
+    .container-biografia {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer {
+        gap: 20px;
+    }
+}
