@@ -96,7 +96,7 @@ h2 {
     justify-content: space-between;
     align-items: center;
     gap: 30px;
-    flex-wrap: wrap; /* <- ESSENCIAL PRA NÃO QUEBRAR */
+    flex-wrap: wrap; 
     padding: 40px 20px;
     margin-top: 20px;
     background-color: pink;
