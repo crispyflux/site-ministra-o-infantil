@@ -90,7 +90,7 @@ h2 {
     text-align: center;
 }
 
-/* BIOGRAFIA (CORRIGIDA) */
+/* BIOGRAFIA  */
 .container-biografia {
     display: flex;
     justify-content: space-between;
@@ -164,7 +164,7 @@ p {
     flex-wrap: wrap;
 }
 
-/* IMAGENS IGUAIS E RESPONSIVAS */
+/* IMAGENS */
 .service,
 .service-dois,
 .service-tres {
