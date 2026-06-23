@@ -141,7 +141,7 @@ p {
     margin-top: 15px;
     text-align: center;
     font-size: 1rem;
-    overflow-wrap: break-word; /* <- evita estourar layout */
+    overflow-wrap: break-word; 
 }
 
 /* SERVIÇOS */
