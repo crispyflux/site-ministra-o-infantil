@@ -6,30 +6,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pliant:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+   
+        
     <title>Tia aline & cia</title>
 </head>
 
 <body>
     <!--topo-->
-    <header>
-        <img class="logo-turminha" src="img-header/logoAline.jpeg" alt="logo-turminha">
-        <h1>Tia aline & Cia</h1>
+    <header >
+        <img  class="logo-turminha" src="img-header/logoAline.jpeg" alt="logo-turminha">
+        
+        <ul id="container-links">
+            <li>
+                <a href="#home">Home</a>
+            </li>
+
+            <li>
+                <a href="#servicos">Serviços</a>
+            </li>
+
+            <li>
+                <a href="#local">localização</a>
+            </li>
+
+        </ul>
+
+    <div id="container-mobile">
+
+        <ul id="container-links-mobile">
+            <li>
+                <a href="#home">Home</a>
+            </li>
+
+            <li>
+                <a href="#servicos">Serviços</a>
+            </li>
+
+            <li>
+                <a href="#localizacao">localização</a>
+            </li>
+
+
+        </ul>
+
+        </div>
+
+        
+
+        <button class="btn-mobile">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        
+
         <nav>
             <a href="https://www.instagram.com/tiaaline_cia/" target="_blank">
                 <img class="logo-instagram" src="img-header/instagram_png-removebg-preview.png" alt="instagram-logo">
             </a>
         </nav>
+
     </header>
     <!--fim do topo-->
+
 
     <div class="max-widht">
         <!--foto-central-->
 
         <div class="foto-central">
-            <img class="img-tia-aline" src="img-slides/first-slide.jpeg" alt="">
+            <img id="home" class="img-tia-aline" src="img-slides/first-slide.jpeg" alt="">
         </div>
         <!--fim-da-foto-central-->
         <!--propaganda-->
@@ -67,7 +116,7 @@
 
         <!--serviços-->
 
-        <div class="serviços">
+        <div class="serviços" id="servicos">
 
             <h2 class="titulo-serviços"> confira nossos serviços</h2>
 
@@ -93,13 +142,13 @@
 
         </div>
 
-        <div class="container-contato">
-            <div class="localização">
-                <h2>Minha igreja</h2>
+        <div  class="container-contato">
+            <div  class="localização">
+                <h2 id="localizacao">Minha congregassão</h2>
                 <p>fica localizada na rua: <span style="color: darkorange; font-weight: 700;">professor francisco pinheiro Numero 1315 </span> 
                     com direção da pastora sheila, pastora ilda e pastor marcelo.
                     a igreja tem 38 anos na presença de Deus, servindo com muito amor e esforço.
-                    Estamos abertos para você vir visitar nossa igreja.
+                    Estamos abertos para você vir visitar nossa congregassão.
                 </p>
             </div>
 
@@ -131,7 +180,7 @@
 
     </div>
 
-<footer>
+<footer id="local">
 <a href="https://www.instagram.com/tiaaline_cia/" target="_blank">
 <img  class="footer-icon" src="img-header/instagram_png-removebg-preview.png" alt="">
 </a>
@@ -144,6 +193,8 @@
 </a>
 
 </footer>
+
+<script src="script.js"></script>
 </body>
 
 </html>
